@@ -58,7 +58,7 @@ class ItemsController extends Controller
         $formfiels = $request->validate([
 
             'Name' => 'required',
-            'Description' => ['required',Rule::unique('items','Description')],
+            'Description' => ['required'],
             'Price' => 'required',
             
 
