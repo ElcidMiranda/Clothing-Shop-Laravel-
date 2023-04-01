@@ -58,11 +58,18 @@
                     <span class="mt-2 text-base leading-normal">
                         Select a file
                     </span>
+        
                 <input
                     type="file"
-                    name="image"
+                    name="image" 
                     class="hidden">
+                    @error('image')
+                        <p class = "text-red-500 text-xs mt-1">{{ $message }}</p>
+                    @enderror
+                    
+
             </label>
+          
         </div>
 
         <button
@@ -73,5 +80,8 @@
     </form>
 </div>
 </body>
+
+
+</script>
 </html>
 </x-clayout>

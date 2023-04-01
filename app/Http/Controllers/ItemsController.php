@@ -60,7 +60,7 @@ class ItemsController extends Controller
             'Name' => 'required',
             'Description' => ['required'],
             'Price' => 'required',
-            
+            'Picture' => 'required'
 
         ]);
         if($request -> hasFile('image')){
